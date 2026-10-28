@@ -97,16 +97,18 @@ Differential expression analysis of 60 primary gastric adenocarcinomas and 36 no
 
 ### Quality control
 PCA of variance-stabilized counts separated tumor and normal samples along PC1 (37% of variance). The raw p-value distribution, MA plot and dispersion estimates were consistent with expected model behavior. All seven positive-control genes changed in the expected direction:
-
-| Gene | Expected | Shrunken log2FC | Adjusted p |
-|---|---|---|---|
-| MKI67 | Up | 1.84 | 3.3e-12 |
-| TOP2A | Up | 2.53 | 1.6e-19 |
-| GKN1 | Down | -2.54 | 7.4e-04 |
-| GKN2 | Down | -2.85 | 1.2e-04 |
-| ATP4A | Down | -2.35 | 7.0e-16 |
-| ATP4B | Down | -2.79 | 4.5e-04 |
-| PGC | Down | -0.80 | 0.11 (n.s.) |
+ 
+| symbol | expected | lfc_shrunk | padj | observed | agrees |
+|---|---|---|---|---|---|
+| MKI67 | Up | 1.84 | 3.25e-12 | Up | TRUE |
+| TOP2A | Up | 2.53 | 1.58e-19 | Up | TRUE |
+| GKN1 | Down | -2.54 | 7.36e-04 | Down | TRUE |
+| GKN2 | Down | -2.85 | 1.21e-04 | Down | TRUE |
+| ATP4A | Down | -2.35 | 7.01e-16 | Down | TRUE |
+| ATP4B | Down | -2.79 | 4.47e-04 | Down | TRUE |
+| PGC | Down | -0.80 | 1.14e-01 | Down | TRUE |
+ 
+Values rounded for display; full precision in [`figures/positive_controls.csv`](figures/positive_controls.csv). PGC changed in the expected direction but was not significant at adjusted p < 0.05.
 
 ![PCA](figures/09_pca.png)
 
