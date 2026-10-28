@@ -6,7 +6,7 @@ Differential expression (DESeq2), gene set enrichment analysis (GSEA) and GO/KEG
 ```
 .
 ├── README.md                       this report
-├── TCGA_STAD_DEG_GSEA.ipynb        full code, outputs and interpretation
+├── tcga-stad-deg-gsea.ipynb        full code, outputs and interpretation
 └── figures/                        all plots and result tables
     ├── 01_volcano.png
     ├── 02_gsea_go_NES.png
@@ -242,7 +242,7 @@ PCA revealed heterogeneity among normal samples. Approximately 7 of 36 normal sa
 ---
 
 ## Reproducing the analysis
-Open `TCGA_STAD_DEG_GSEA.ipynb` in Google Colab with the R runtime and run all cells. The first run installs Bioconductor packages (about 35 minutes) and downloads about 400 MB from GDC. All figures and tables are written to `figures/`.
+Open `tcga-stad-deg-gsea.ipynb` in Google Colab with the R runtime and run all cells. The first run installs Bioconductor packages (about 35 minutes) and downloads about 400 MB from GDC. All figures and tables are written to `figures/`.
 
 ## References
 - Jiang Y, et al. Non-invasive tumor microenvironment evaluation and treatment response prediction in gastric cancer using deep learning radiomics. *Cell Reports Medicine* 4, 101146 (2023).
